@@ -3,7 +3,7 @@ import csv
 import pandas as pd
 from typing import List
 
-def index_range(page, page_size):
+def index_range(page=3, page_size=15):
     if page < 1 or page_size < 1:
         return None  # Handle invalid input
 
