@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from base_caching import BaseCaching
 
+
 class FIFOCache(BaseCaching):
     def __init__(self):
         super().__init__()
@@ -23,4 +24,3 @@ class FIFOCache(BaseCaching):
         if key is None or key not in self.cache_data:
             return None
         return self.cache_data[key]
-
